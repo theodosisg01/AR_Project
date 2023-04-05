@@ -1,6 +1,6 @@
-## Ονοματεπώνυμο: Theodosios Giannoulis
+## Ονοματεπώνυμο: Θεοδόσης Γιαννούλης
 ## ΑΜ: TX2019027
-## My Character: Pateras Olwn
+## My Character: Μόγλης
 
 ## Παραδοτέο 1 
 
