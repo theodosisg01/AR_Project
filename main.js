@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     //scene.add(light);
 
      // load and create the first video plane
-  //const video1 = await loadVideo("./assets/videos/Video1.mp4");
-  //const texture1 = new THREE.VideoTexture(video1);
-  //const geometry1 = new THREE.PlaneGeometry(1, 240/428);
-  //const material1 = new THREE.MeshBasicMaterial({map: texture1});
-  //const plane1 = new THREE.Mesh(geometry1, material1);
+  const video1 = await loadVideo("./assets/videos/Video1.mp4");
+  const texture1 = new THREE.VideoTexture(video1);
+  const geometry1 = new THREE.PlaneGeometry(1, 240/428);
+  const material1 = new THREE.MeshBasicMaterial({map: texture1});
+  const plane1 = new THREE.Mesh(geometry1, material1);
 
   // load and create the second video plane
   const video2 = await loadVideo("./assets/videos/Video2.mp4");
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const plane2 = new THREE.Mesh(geometry2, material2);
 
   // load and create the third video plane
-  //const video3 = await loadVideo("./assets/videos/Video3.mp4");
-  //const texture3 = new THREE.VideoTexture(video3);
-  //const geometry3 = new THREE.PlaneGeometry(1, 240/428);
-  //const material3 = new THREE.MeshBasicMaterial({map: texture3});
-  //const plane3 = new THREE.Mesh(geometry3, material3);
+  const video3 = await loadVideo("./assets/videos/Video3.mp4");
+  const texture3 = new THREE.VideoTexture(video3);
+  const geometry3 = new THREE.PlaneGeometry(1, 240/428);
+  const material3 = new THREE.MeshBasicMaterial({map: texture3});
+  const plane3 = new THREE.Mesh(geometry3, material3);
 
   // add the first video plane to an anchor
   const anchor1 = mindarThree.addAnchor(0);
@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
     
      //image 1
-  //const anchor4 = mindarThree.addAnchor(3);
-  //const texture4 = new THREE.TextureLoader().load("./assets/img1.jpg");
-  //const geometry4 = new THREE.PlaneGeometry(1, 0.55);
-  //const material4 = new THREE.MeshBasicMaterial({map: texture4});
-  //const plane4 = new THREE.Mesh( geometry4, material4);
+  const anchor4 = mindarThree.addAnchor(3);
+  const texture4 = new THREE.TextureLoader().load("./assets/img1.jpg");
+  const geometry4 = new THREE.PlaneGeometry(1, 0.55);
+  const material4 = new THREE.MeshBasicMaterial({map: texture4});
+  const plane4 = new THREE.Mesh( geometry4, material4);
     
   anchor4.group.add(plane4);
 
@@ -99,4 +99,4 @@ document.addEventListener('DOMContentLoaded', () => {
   //startButton.addEventListener("click", start);
   //document.body.appendChild(startButton);
   start();
-});	
+});
